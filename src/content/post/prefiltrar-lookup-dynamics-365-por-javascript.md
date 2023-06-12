@@ -48,7 +48,7 @@ Nascetur gravida mus imperdiet dapibus suspendisse cras nisl conubia, vulputate 
 
 ## Código
 
-```
+```js
 function FiltrarLookup(formContext) {
     //<summary>
     // Filtra un lookup de la entidad "product" con un filtro personalizado haciendo uso de addPreSearch.
