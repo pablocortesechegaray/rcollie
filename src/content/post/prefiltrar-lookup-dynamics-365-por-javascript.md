@@ -21,21 +21,9 @@ Es recomendable que se haga uso del prefiltrado mediante parametrización están
 
 ## ¿Cómo realizar filtrado de lookup por JavaScript?
 
-- Luctus euismod pretium nisi et, est dui enim.
+Para realizar el filtrado de un lookup mediante JavaScript es necesario utilizar el método addPreSearch(). Para ello, es necesario que recuperemos el control del campo sobre el que vamos a filtrar y le indiquemos el filtro personalizado que queremos aplicar. Si para obtener el filtro hacemos uso de una búsqueda avanzada es importante que nos acordemos que este método únicamente soporta que le pasemos el contenido que hay dentro de las etiquetas `<filter></filter>`. Si le pasamos el fetchXML completo el desarrollo dará error.
 
-- Curae eget inceptos malesuada, fermentum class.
-
-- Porttitor vestibulum aliquam porta feugiat velit, potenti eu placerat.
-
-- Ligula lacus tempus ac porta, vel litora.
-
-Torquent non nisi lacinia faucibus nibh tortor taciti commodo porttitor, mus hendrerit id leo scelerisque mollis habitasse orci tristique aptent, lacus at molestie cubilia facilisis porta accumsan condimentum. Metus lacus suscipit porttitor integer facilisi torquent, nostra nulla platea at natoque varius venenatis, id quam pharetra aliquam leo. Dictum orci himenaeos quam mi fusce lacinia maecenas ac magna eleifend laoreet, vivamus enim curabitur ullamcorper est ultrices convallis suscipit nascetur. Ornare fames pretium ante ac eget nisi tellus vivamus, convallis mauris sapien imperdiet sollicitudin aliquet taciti quam, lacinia tempor primis magna iaculis at eu. Est facilisi proin risus eleifend orci torquent ultricies platea, quisque nullam vel porttitor euismod sociis non, maecenas sociosqu interdum arcu sed pharetra potenti. Aliquet risus tempus hendrerit sapien tellus eget cursus enim etiam dui, lobortis nostra pellentesque odio posuere morbi ad neque senectus arcu eu, turpis proin ac felis purus fames magnis dis dignissim.
-
-Orci volutpat augue viverra scelerisque dictumst ut condimentum vivamus, accumsan cum sem sollicitudin aliquet vehicula porta pretium placerat, malesuada euismod primis cubilia rutrum tempus parturient. Urna mauris in nibh morbi hendrerit vulputate condimentum, iaculis consequat porttitor dui dis euismod eros, arcu elementum venenatis varius lectus nisi. Nibh arcu ultrices semper morbi quam aptent quisque porta posuere iaculis, vestibulum cum vitae primis varius natoque conubia eu. Placerat sociis sagittis sociosqu morbi purus lobortis convallis, bibendum tortor ridiculus orci habitasse viverra dictum, quis rutrum fusce potenti volutpat vehicula. Curae porta inceptos lectus mus urna litora semper aliquam libero rutrum sem dui maecenas ligula quis, eget risus non imperdiet cum morbi magnis suspendisse etiam augue porttitor placerat facilisi hendrerit. Et eleifend eget augue duis fringilla sagittis erat est habitasse commodo tristique quisque pretium, suspendisse imperdiet inceptos mollis blandit magna mus elementum molestie sed vestibulum. Euismod morbi hendrerit suscipit felis ornare libero ligula, mus tortor urna interdum blandit nisi netus posuere, purus fermentum magnis nam primis nulla.
-
-## Elementum nisi urna cursus nisl quam ante tristique blandit ultricies eget
-
-
+Añado un ejemplo en el cual estoy filtrando un campo lookup que se llama "productid" de la entidad "product" y le estoy pasando un filtro personalizado para que únicamente me devuelva productos en estado Inactivo.
 
 ## Código
 
@@ -47,7 +35,7 @@ function FiltrarLookup(formContext) {
 
     const lookupSchemaName = "productid";
     const lookupEntityName = "product";
-    const filtroXML = `<filter type="and">
+    const filterXML = `<filter type="and">
                         <condition attribute="statecode" operator="eq" value="1" />
                        </filter>`;
 
@@ -56,8 +44,10 @@ function FiltrarLookup(formContext) {
     if (lookupControl != null) 
     {
         lookupControl.addPreSearch(() => {
-            lookupControl.addCustomFilter(filtroXML, lookupEntityName);
+            lookupControl.addCustomFilter(filterXML, lookupEntityName);
         });
     }
 }
 ```
+
+En caso de hacer uso de este código, acuérdate que tendrás que modificar los valores de las variables **ookupSchemaName**, **lookupEntityName** y **filterXML**.
