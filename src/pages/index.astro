@@ -23,6 +23,11 @@ const meta = {
 <Layout {meta}>
   <!-- HighlightedPosts Widget ******* -->
 
+  <Fragment slot="title">
+      Bienvenidos a mi blog sobre
+      <span class="text-accent dark:text-white highlight"> Dynamics 365 & Power Platform</span>    
+  </Fragment>
+  
   <LatestPosts
     title="Últimos artículos"
     information={`La finalidad de este blog es documentar y compartir conocimiento de tareas que realizo en mi día a día relacionadas con Dynamics 365 & Power Platform.
@@ -41,9 +46,7 @@ const meta = {
     callToAction2={{ text: 'Learn more', href: '#features' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS    </Fragment>
+    
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
