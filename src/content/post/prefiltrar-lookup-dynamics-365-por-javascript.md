@@ -17,7 +17,7 @@ En **Dynamics 365**, el prefiltrado de datos en un campo de búsqueda es una fun
 - Mediante parametrización estándard que podemos realizar desde el formulario.
 - Mediante un desarrollo JavaScript que aplique un filtro personalizado sobre el lookup.
 
-Es recomendable que se haga uso del prefiltrado mediante parametrización estándar siempre y cuando esto sea posible. Te dejo por aquí el link por si quiees ver cómo llevarlo a cabo. 
+Es recomendable que se haga uso del prefiltrado mediante parametrización estándar siempre y cuando esto sea posible. Te dejo por aquí el **link** por si quieres ver cómo llevarlo a cabo. 
 En otras ocasiones por necesidades del proyecto o de la lógica de negocio del cliente nos vemos obligados a aplicar filtros dinámicos o filtros con lógica compleja y tenemos que realizar un desarrollo JavaScript para obtener los resultados que esperamos.
 
 ## ¿Cómo realizar prefiltrado de lookup por JavaScript?
@@ -55,7 +55,7 @@ En caso de hacer uso de este código, acuérdate que tendrás que modificar los 
 
 ## ¿Cómo quitar prefiltrado de lookup por JavaScript?
 
-Por otro lado, en ocasiones me he visto con el requerimiento de tener que poner un prefiltro personalizado en base al valor de otro campo del formulario y tener que quitarlo si el usuario borraba el valor. Para poder hacer esto, al igual que en el caso anterior tenemos el método addPreSearch(), existe otro método para quitar un filtro personalizado que previamente hayamos implementado sobre el lookup. El método para realizar esto es removePreSearch() y su funcionamiento es muy similar.
+Por otro lado, en ocasiones me he visto con el requerimiento de tener que poner un prefiltro personalizado en base al valor de otro campo del formulario y tener que quitarlo si el usuario borraba el valor. Para poder hacer esto, al igual que en el caso anterior tenemos el método addPreSearch(), existe otro método para quitar un filtro personalizado que previamente hayamos implementado sobre el lookup. El método para realizar esto es **removePreSearch()** y su funcionamiento es muy similar.
 
 Añado un ejemplo en el cuál quito el prefiltro que he aplicado previamente sobre el campo "productid":
 
@@ -84,4 +84,4 @@ function QuitarFiltroLookup(formContext) {
 }
 ```
 
-Espero que este post te haya sido de ayuda a la hora de aplicar filtros personalizados en campos de búsqueda mediante JavaScript.
+Espero que este post te haya sido de ayuda a la hora de **aplicar filtros personalizados en campos de búsqueda mediante JavaScript**.
