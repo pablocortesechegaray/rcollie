@@ -5,8 +5,22 @@ import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+import BlogList from '~/components/blog/List.astro';
+import Headline from '~/components/blog/Headline.astro';
+import Pagination from '~/components/blog/Pagination.astro';
+
+import { fetchPosts } from '~/utils/blog';
+import { BLOG_BASE } from '~/utils/permalinks';
+
 import { headerData } from '~/data';
 
+export async function getStaticPaths({ paginate }) {
+  if (BLOG?.disabled || BLOG?.list?.disabled) return [];
+  return paginate(await fetchPosts(), {
+    params: { blog: BLOG_BASE || undefined },
+    pageSize: BLOG.postsPerPage,
+  });
+}
 const { page } = Astro.props;
 const currentPage = page.currentPage ?? 1;
 
