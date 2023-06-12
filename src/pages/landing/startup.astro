@@ -5,24 +5,7 @@ import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
-import BlogList from '~/components/blog/List.astro';
-import Headline from '~/components/blog/Headline.astro';
-import Pagination from '~/components/blog/Pagination.astro';
-
-import { fetchPosts } from '~/utils/blog';
-import { BLOG_BASE } from '~/utils/permalinks';
-
 import { headerData } from '~/data';
-
-export async function getStaticPaths({ paginate }) {
-  if (BLOG?.disabled || BLOG?.list?.disabled) return [];
-  return paginate(await fetchPosts(), {
-    params: { blog: BLOG_BASE || undefined },
-    pageSize: BLOG.postsPerPage,
-  });
-}
-const { page } = Astro.props;
-const currentPage = page.currentPage ?? 1;
 
 const meta = {
   title: "Startup Landing Page",
@@ -40,12 +23,6 @@ const meta = {
   </Fragment>
 
   <!-- Hero2 Widget ******************* -->
-  
-  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
-    <BlogList posts={page.data} />
-    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
-  </section>
-
   <Hero
     callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
     callToAction2={{ text: 'Learn more', href: '#features' }}
