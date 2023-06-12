@@ -7,6 +7,9 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import { headerData } from '~/data';
 
+const { page } = Astro.props;
+const currentPage = page.currentPage ?? 1;
+
 const meta = {
   title: "Startup Landing Page",
 };
