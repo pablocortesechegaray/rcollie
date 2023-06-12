@@ -1,10 +1,10 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'Rincón Collie',
+  name: 'pcortesdev',
 
   origin: 'https://astrowind.vercel.app',
-  basePathname: '/blog/',
+  basePathname: '/',
   trailingSlash: false,
 
   title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
