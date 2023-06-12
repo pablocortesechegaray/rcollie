@@ -4,7 +4,7 @@ const CONFIG = {
   name: 'Rincón Collie',
 
   origin: 'https://astrowind.vercel.app',
-  basePathname: '/',
+  basePathname: '/blog/',
   trailingSlash: false,
 
   title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
