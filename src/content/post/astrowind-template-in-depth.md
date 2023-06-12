@@ -1,10 +1,10 @@
 ---
 publishDate: 2023-01-08T00:00:00Z
-title: Esto es una prueba
-description: Realmente esto es la descripción?
-excerpt: Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas
+title: Cuidado y entrenamiento de un Border Collie
+description: Conoce todos los detalles relacionados con el cuidado y el entrenamiento de un border collie.
+excerpt: Conoce todos los detalles relacionados con el cuidado y el entrenamiento de un border collie.
 image: ~/assets/images/stickers.jpg
-category: Tutorials
+category: Cuidados
 tags:
   - astro
   - tailwind css
