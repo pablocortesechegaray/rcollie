@@ -3,7 +3,7 @@ publishDate: 2023-06-12T00:00:00Z
 title: Filtrar un lookup de Dynamics 365 usando JavaScript
 description: Descubre cómo mejorar la experiencia de uso en los campos de búsqueda aplicando filtros personalizados mediante JavaScript.
 excerpt: Descubre cómo mejorar la experiencia de uso en los campos de búsqueda aplicando filtros personalizados mediante JavaScript.
-image: ~/assets/images/prefiltrar-lookup-por-javascript.jpg
+image: ~/assets/images/javascript-mug.jpg
 category: Desarrollo
 tags:
   - JavaScript
