@@ -3,7 +3,7 @@ publishDate: 2023-01-08T00:00:00Z
 title: Cuidado y entrenamiento de un Border Collie
 description: Conoce todos los detalles relacionados con el cuidado y el entrenamiento de un border collie.
 excerpt: Conoce todos los detalles relacionados con el cuidado y el entrenamiento de un border collie.
-image: ~/assets/images/stickers.jpg
+image: ~/assets/images/work1.jpg
 category: Cuidados
 tags:
   - astro
