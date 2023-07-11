@@ -3,10 +3,10 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Landing',
+      text: 'Categorías',
       links: [
         {
-          text: 'Sass',
+          text: 'JavaScript',
           href: getPermalink('/landing/saas'),
         },
         {
@@ -49,17 +49,14 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
+      text: 'Sobre mí',
       href: '#',
     },
     {
       text: 'Blog',
       href: getBlogPermalink(),
     },
-  ],
-  actions: [
-    { type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }
-  ],
+  ]
 };
   
 export const footerData = {
