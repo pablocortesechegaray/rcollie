@@ -6,15 +6,19 @@ export const headerData = {
       text: 'Categorías',
       links: [
         {
-          text: 'JavaScript',
+          text: 'Dynamics 365',
           href: getPermalink('/landing/saas'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/landing/startup'),
+          text: 'Power Platform',
+          href: getPermalink('/landing/saas'),
         },
         {
-          text: 'Mobile App',
+          text: 'JavaScript',
+          href: getPermalink('/etiqueta/javascript/'),
+        },
+        {
+          text: '.NET',
           href: getPermalink('/landing/mobile-app'),
         },
       ],
