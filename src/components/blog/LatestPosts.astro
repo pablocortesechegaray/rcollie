@@ -17,7 +17,7 @@ const {
   allPostsText = 'Ver todos los posts',
   allPostsLink = getBlogPermalink(),
   information = await Astro.slots.render('information'),
-  count = 4,
+  count = 8,
 } = Astro.props;
 
 const posts = await findLatestPosts({ count });
