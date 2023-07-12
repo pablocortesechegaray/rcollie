@@ -1,14 +1,13 @@
 ---
-publishDate: 2023-01-12T00:00:00Z
-title: Get started with AstroWind to create a website using Astro and Tailwind CSS
-description: Lorem ipsum dolor sit amet
-excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
-image: ~/assets/images/work2.jpg
-category: Tutorials
+publishDate: 2023-07-12T00:00:00Z
+title: Convertir fecha a la zona horaria del usuario en Dynamics 365
+description: Explico cómo convertir una fecha en UTC a la zona horaria del usuario en Dynamics 365.
+excerpt: Explico cómo convertir una fecha en UTC a la zona horaria del usuario en Dynamics 365.
+image: ~/assets/images/aplicar-zona-horaria-dynamics-365.jpg
+category: Desarrollo
 tags:
-  - astro
-  - tailwind css
-canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
+  - .NET
+canonical: https://astrowind.vercel.app/convertir-fecha-a-la-zona-horaria-del-usuario-en-dynamics-365
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
